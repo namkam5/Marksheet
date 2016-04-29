@@ -2,9 +2,7 @@
 			
 
 
-			if(typeof angular == 'undefined') {
-    		alert("angular not loaded")
-			}
+			if(typeof angular == 'undefined') {alert("angular not loaded")}
 
 			//((sem1gpa*sem1credits)+(sem2gpa*sem2credits)+(sem3gpa*sem3credits)+(sem4gpa*sem4credits)+(sem5gpa*sem5credits)+(sem6gpa*sem6credits)+(sem7gpa*sem7credits)+(sem8gpa*sem8credits))/(sem1credits+sem2credits+		sem3credits+sem4credits+sem5credits+sem6credits+sem7credits+sem8credits)
 
