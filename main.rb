@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/reloader' if development?
 
 class Main < Sinatra::Base
 
