@@ -9,40 +9,32 @@
 			
 	<div class = inpinside>	
 
-		<p class="semname"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPA | GP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credits</p> <br />
+		<p class="gpanamediv"> GPA | GP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credits</p> <br />
 
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 1 | Subject 1 </span>&nbsp;&nbsp; &nbsp; <input type="number" ng-model="sem1gpa"> 				
-						 	   						 &nbsp;&nbsp; &nbsp;	<input type="number" ng-model="sem1credits"></p>
+	<p><div class="semnamediv">Semester 1 | Subject 1 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem1gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem1credits" class="inputno"></div></p>
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 2 | Subject 2 </span>&nbsp;&nbsp;  &nbsp;  <input type="number" ng-model="sem2gpa">
-							 						&nbsp;&nbsp;  &nbsp;	    <input type="number" ng-model="sem2credits"></p>
+	<p><div class="semnamediv">Semester 2 | Subject 2 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem2gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem2credits" class="inputno"></div></p>
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 3 | Subject 3 </span>&nbsp;&nbsp; &nbsp;  <input type="number" ng-model="sem3gpa">
-							  						&nbsp;&nbsp; &nbsp;	    <input type="number" ng-model="sem3credits"></p>
+	<p><div class="semnamediv">Semester 3 | Subject 3 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem3gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem3credits" class="inputno"></div></p>
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 4 | Subject 4 </span>&nbsp;&nbsp; &nbsp;  <input type="number" ng-model="sem4gpa">
-													&nbsp;&nbsp; &nbsp;	    <input type="number" ng-model="sem4credits"></p>
+	<p><div class="semnamediv">Semester 4 | Subject 4 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem4gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem4credits" class="inputno"></div></p>
 
-		<p class="maintext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 5 | Subject 5 </span>&nbsp;&nbsp; &nbsp;  <input type="number" ng-model="sem5gpa">
-													&nbsp;&nbsp; &nbsp;	    <input type="number" ng-model="sem5credits"></p>
+	<p><div class="semnamediv">Semester 5 | Subject 5 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem5gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem5credits" class="inputno"></div></p>
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 6 | Subject 6 </span>&nbsp;&nbsp; &nbsp;  <input type="number" ng-model="sem6gpa">
-													&nbsp;&nbsp; &nbsp;        <input type="number" ng-model="sem6credits"></p>
+	<p><div class="semnamediv">Semester 6 | Subject 6 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem6gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem6credits" class="inputno"></div></p>
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 7 | Subject 7 </span>&nbsp;&nbsp; &nbsp;  <input type="number" ng-model="sem7gpa">
-													&nbsp;&nbsp; &nbsp;	    <input type="number" ng-model="sem7credits"></p>
+	<p><div class="semnamediv">Semester 7 | Subject 7 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem7gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem7credits" class="inputno"></div></p>
 
-		<p class="maintext"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = "semname">Semester 8 | Subject 8 </span>&nbsp;&nbsp; &nbsp;  <input type="number" ng-model="sem8gpa">
-													&nbsp;&nbsp; &nbsp;        <input type="number" ng-model="sem8credits"></p>
+	<p><div class="semnamediv">Semester 8 | Subject 8 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem8gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem8credits" class="inputno"></div></p>
 
-		</div>
+	</div>
 
-							<hr id="myhr">
+	<hr id="myhr">
 
 
 	
-		<p id = "cgpaout" ng-cloak> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CGPA | GPA : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{((sem1gpa*sem1credits)+(sem2gpa*sem2credits)+(sem3gpa*sem3credits)+(sem4gpa*sem4credits)+(sem5gpa*sem5credits)+(sem6gpa*sem6credits)+(sem7gpa*sem7credits)+(sem8gpa*sem8credits))/(sem1credits+sem2credits+sem3credits+sem4credits+sem5credits+sem6credits+sem7credits+sem8credits) | number:2}} </p>
+		<div><p ng-cloak ><div id ="cgpaout"> CGPA | GPA : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{((sem1gpa*sem1credits)+(sem2gpa*sem2credits)+(sem3gpa*sem3credits)+(sem4gpa*sem4credits)+(sem5gpa*sem5credits)+(sem6gpa*sem6credits)+(sem7gpa*sem7credits)+(sem8gpa*sem8credits))/(sem1credits+sem2credits+sem3credits+sem4credits+sem5credits+sem6credits+sem7credits+sem8credits) | number:2}}</div></p></div>
 
 		
 		<br />
@@ -67,7 +59,7 @@
 			
 		</div>
 
-		<br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br />
 
 		<div class="third-pic">
 

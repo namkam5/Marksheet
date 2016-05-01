@@ -18,13 +18,7 @@
 
 input {
 
-	width: 15%;
-	box-sizing: border-box;
-	padding-left: 10px;
-	border-radius: 0px;
-	border: 2px solid #00786A;
-	color: #000;
-	text-align: center;
+	
 }
 
 #cgpaout{
@@ -32,7 +26,20 @@ input {
 	font-size: 30px;
 	color: #fff;
 	font-family: 'Varela Round', sans-serif;
+	text-align: left;
+	margin-left: 175px;
+	
 	 
+}
+
+#cgpaans{
+
+		font-size: 30px;
+		color: #fff;
+		font-family: 'Varela Round', sans-serif;
+		
+		
+
 }
 
 .maintext {
@@ -64,7 +71,7 @@ input {
 	margin:0 auto;
 }
 
-.semname {
+.semnamediv {
 
 	font-size: 25px;
 	font-family: 'Varela Round', sans-serif;
@@ -74,6 +81,7 @@ input {
 	color: #fff;
 	font-weight: normal;
 	text-align: center;
+	
 	
 	
 }
@@ -246,4 +254,34 @@ nav-list > li > a:visited{color:#292E51; text-decoration: none;}
 	font-family: 'Varela Round', sans-serif;
 	padding-bottom: 15px;
 
+}
+
+.inputno {
+
+	
+	width: 15%;
+	height: 40px;
+	padding-left: 10px;
+	border-radius: 0px;
+	border: 2px solid #00786A;
+	color: #505260;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.gpanamediv{
+
+	font-size: 25px;
+	font-family: 'Varela Round', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	color: #fff;
+	font-weight: normal;
+	text-align: right;
+	margin-right: 143px;
 }
