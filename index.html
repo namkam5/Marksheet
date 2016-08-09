@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="gpaCal">
+<head>
+	<meta charset="UTF-8">
+	<title> Marksheet </title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./public/styleapp.css">
+
+	<!-- favicons ! -->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<!-- favicons end -->
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+
+	<!-- Latest compiled and minified CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+<div class="navigation">
+	<nav class="fixed-nav-bar">
+  		<!-- Fixed navigation bar content -->
+  		<a id="navbarmark" href="http://marksheet.co"> Marksheet </a>
+  		<ul id = "menu" class="nav-list">
+  			 <!-- <li class="nav-item"><a id="nav-anchor-one" class="nav-anchor" href="#0">Sign In  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
+  			<li class="nav-item"><a class="nav-anchor" href="#about-it">About  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+  			<li class="nav-item"><a class="nav-anchor" href="#works">How it Works  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+
+  		</ul>
+	</nav>
+</div>
+    <br /><br /><br /><br /><br />
+
+    <div class="bkgreen">
+
+    	<div class = "main" ng-controller = "myCtrl">
+    		<script>
+    		if(typeof angular == 'undefined') {alert("angular not loaded")}
+
+    		//((sem1gpa*sem1credits)+(sem2gpa*sem2credits)+(sem3gpa*sem3credits)+(sem4gpa*sem4credits)+(sem5gpa*sem5credits)+(sem6gpa*sem6credits)+(sem7gpa*sem7credits)+(sem8gpa*sem8credits))/(sem1credits+sem2credits+		sem3credits+sem4credits+sem5credits+sem6credits+sem7credits+sem8credits)
+
+    		var app = angular.module('gpaCal',[]);
+    		app.controller('myCtrl', ['$scope', function($scope){
+
+
+    			$scope.sem1gpa = 0; $scope.sem1credits = 0;
+    			$scope.sem2gpa = 0; $scope.sem2credits = 0;
+    			$scope.sem3gpa = 0; $scope.sem3credits = 0;
+    			$scope.sem4gpa = 0; $scope.sem4credits = 0;
+    			$scope.sem5gpa = 0; $scope.sem5credits = 0;
+    			$scope.sem6gpa = 0; $scope.sem6credits = 0;
+    			$scope.sem7gpa = 0; $scope.sem7credits = 0;
+    			$scope.sem8gpa = 0; $scope.sem8credits = 0;
+
+    			//$scope.calculate = function() {
+
+    			// $scope.x = {
+    			//	'cgp': (($scope.sem1gpa*$scope.sem1credits)+($scope.sem2gpa*$scope.sem2credits)+($scope.sem3gpa*$scope.sem3credits)+($scope.sem4gpa*$scope.sem4credits)+($scope.sem5gpa*$scope.sem5credits)+($scope.sem6gpa*$scope.sem6credits)+($scope.sem7gpa*$scope.sem7credits)+($scope.sem8gpa*$scope.sem8credits))/($scope.sem1credits+$scope.sem2credits+$scope.sem3credits+$scope.sem4credits+$scope.sem5credits+$scope.$scope.sem6credits+$scope.sem7credits+$scope.sem8credits)
+    			//}
+
+    			//};
+
+
+    		}]);
+
+    		</script>
+
+
+
+
+    		<br /><br />
+
+    	<div class = inpinside>
+
+    		<p class="gpanamediv"> GPA | GP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credits</p> <br />
+
+
+    	<p><div class="semnamediv">Semester 1 | Subject 1 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem1gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem1credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 2 | Subject 2 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem2gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem2credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 3 | Subject 3 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem3gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem3credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 4 | Subject 4 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem4gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem4credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 5 | Subject 5 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem5gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem5credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 6 | Subject 6 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem6gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem6credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 7 | Subject 7 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem7gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem7credits" class="inputno"></div></p>
+
+    	<p><div class="semnamediv">Semester 8 | Subject 8 &nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem8gpa" class="inputno">&nbsp;&nbsp;&nbsp;<input type="number" ng-model="sem8credits" class="inputno"></div></p>
+
+    	</div>
+
+    	<hr id="myhr">
+
+
+
+    		<div><p ng-cloak ><div id ="cgpaout"> CGPA | GPA : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{((sem1gpa*sem1credits)+(sem2gpa*sem2credits)+(sem3gpa*sem3credits)+(sem4gpa*sem4credits)+(sem5gpa*sem5credits)+(sem6gpa*sem6credits)+(sem7gpa*sem7credits)+(sem8gpa*sem8credits))/(sem1credits+sem2credits+sem3credits+sem4credits+sem5credits+sem6credits+sem7credits+sem8credits) | number:2}}</div></p></div>
+
+
+    		<br />
+
+            </div>
+
+    </div>
+
+    <div id = "works"class="section-two">git
+    		<br /><br />
+    		<p class="sub-heading">How Marksheet Works</p>
+    		<br /><br /><br /><br />
+
+    		<div class="second-pic">
+
+    		<img src="./public/images/pic-one.png" class = "second-image" alt="First Pic">
+
+
+    				<div id ="desc-one">
+    					<p id="using-marksheet">Using marksheet is simple, Just Enter your GPA of a particular semester in the left field and the total credits for that semester in the right field and you're good to go.</p>
+    				</div>
+
+    		</div>
+
+    		<br /><br /><br /><br /><br /><br />
+
+    		<div class="third-pic">
+
+    		<img src="./public/images/pic-two.png" alt="Second Pic" class = "third-image">
+
+    				<div id ="desc-two">
+    					<p id="using-marksheet">You can even calculate your GPA for a particular semester, Just enter the grade point for the particular course in the left field and credits for that course in the right field.</p>
+    				</div>
+
+    		</div>
+    		<br /><br /><br /><br />
+
+    </div>
+
+    <div id = "about-it"class="section-three">
+
+    		<br /><br />
+    		<p id="sub-heading-about">About</p>
+    		<br /><br />
+    		<div class="about-content">
+    		<p id="about-marksheet"> Marksheet was created to address a very simple problem faced by most students, To calculate and predict their CGPA or GPA. One would have to do tedious calculations on the calculator to know how much they must score to reach a particular goal. Not anymore ! Marksheet makes it simple to predict how much one would need to score to get a particular amount of gpa</p>
+    		</div>
+
+    		<br /><br /><br />
+
+    </div>
+
+
+<div class="section-two">
+
+		<br />
+		<p id="footer-text">© 2016 Marksheet Created by <a href="http://namankamra.com" target="_blank">Naman Kamra</a></p>
+
+
+</div>
+
+
+
+
+</body>
